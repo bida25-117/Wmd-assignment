@@ -39,7 +39,10 @@ body{
   background: transparent;
 }
 
-h1{font-size: 28px;}
+h1{font-size: 28px;
+font-family: Arial, sans-serif;
+color: white;
+}
 
 .name{color: #ff4939;
 font-size: 28px;
@@ -62,7 +65,7 @@ nav a {
 }
 
 
-form{
+.form-card{
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -76,27 +79,23 @@ input textarea{
 }
 
 
-#tournaments{
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
   padding: 20px;
-  justify-content: flex-start;
-}
-.card {
-  display: block;
-  width: 220px;
-  height: auto;
-  position: relative;
-  border-radius: 10px;
-  overflow: hidden;
 }
 
-.card img{width:100%;
-height: 100px;
-object-fit: contain;
-display: block;
+.tournament-card {
+  width: 100%; 
+
 }
+
+.tournament-card img {
+  width: 100%;
+height: auto;
+border-radius: 10px;
+display: block;}
 
 p{
   color: white;
@@ -112,11 +111,12 @@ p{
 
 
 table {
-  width: 90%;
+  width: 60%;
   margin: 30px auto;
   border-collapse: collapse;
-  background: #111;
+  background:black;
   color: white;
+  border: white;
 }
 
 th, td {
@@ -127,5 +127,69 @@ th, td {
 
 th {
   background: black;
-  color: wheat;
+  color: white;
+}
+
+
+
+tournament {
+  background: black;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 25px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tab {
+  display: none;
+  background: black;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.tab.active {
+  display: block;
+
+
+}
+
+.tabs button {
+  background: black;
+  color: white;
+  border: 1px solid #FF4939;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+
+.content-section {
+  border-top: 1px solid #FF3949;
+  border-bottom: 1px solid #FF3949;
+}
+
+h2 {
+  color: white;
+  font-size: 24px;
+  margin: 20px ;
+}
+
+
+
+  .cta-btn{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 40px;
+    margin-top: 37px;
+    padding: 13px 25px;
+    color: white;
+    background-color: #ff4939;
+  }
+
+#hero{
+  text-align: center;
 }
