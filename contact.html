@@ -36,20 +36,58 @@
 
 <main>
 <h1>CONTACT</h1>
-<form class="card">
-    <h2>Contact Us</h2>
-    <input type="text" placeholder="Name">
-    <input type="email" placeholder="Email">
-    <textarea placeholder="Message"></textarea>
-    <button class="btn">Send</button>
+<h1>CONTACT</h1>
+
+<form id="contactForm" class="card" action="https://formspree.io/f/xlgzbqao" method="POST">
+  <h2>Contact Us</h2>
+
+  <input type="text" id="name" name="name" placeholder="Name">
+  <input type="email" id="email" name="email" placeholder="Email">
+  <textarea id="message" name="message" placeholder="Message"></textarea>
+
+  <button type="submit" class="btn">Send</button>
+  <p id="error" style="color:red;"></p>
 </form>
 
+  <p>Contact: <a href="mailto:31esportsbotswana@gmail.com">31esportsbotswana@gmail.com</a></p>
 
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  let name = document.getElementById("name").value.trim();
+  let email = document.getElementById("email").value.trim();
+  let message = document.getElementById("message").value.trim();
+  let error = document.getElementById("error");
 
+  error.textContent = "";
+
+  if (name === "" || email === "" || message === "") {
+    e.preventDefault();
+    error.textContent = "All fields are required.";
+    return;
+  }
+
+  let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+  if (!email.match(emailPattern)) {
+    e.preventDefault();
+    error.textContent = "Enter a valid email.";
+    return;
+  }
+
+  if (message.length < 10) {
+    e.preventDefault();
+    error.textContent = "Message must be at least 10 characters.";
+    return;
+  }
+});
+</script>
 </main>
 </section>
+
+
+
 <footer>
-    <p>© 31 Esports 2026|all rights Reserved|31esport@gmail.com</p>
+    <p>© 31 Esports 2026|all rights Reserved|31esportbotswana@gmail.com</p>
 </footer>
 </body>
 </html>
