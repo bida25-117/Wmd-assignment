@@ -35,42 +35,21 @@
 
 
 
-  <div class="tournament">
-  <div class="header">
-    <h2>Solo Cash Cup #2</h2>
-    <div class="meta">29 August 2026 • P5000 • Solo</div>
-  </div>
 
   <div class="tabs">
-    <button onclick="openTab(event,'s2d')">Details</button>
-    <button onclick="openTab(event,'s2l')">Leaderboard</button>
+    <button onclick="openTab(event,'d4d')">Details</button>
+    <button onclick="openTab(event,'d4l')">Leaderboard</button>
   </div>
 
-  <div id="s2d" class="tab active">
-    <p>Mode: Solo Ranked</p>
-    <p>Region: Africa</p>
-  </div>
 
-  <div id="s2l" class="tab active">
+  
 
-    <h3> Top 5</h3>
-    <div class="player gold"> 31Exalted — 172 pts</div>
-    <div class="player silver"> NeoSnipes — 160 pts</div>
-    <div class="player bronze"> hermiracks — 155 pts</div>
-    <div class="player">4. palesaonctrl — 149 pts</div>
-    <div class="player">5. 31MysteryGamer — 143 pts</div>
+  
 
-    <table>
-      <tr><th>#</th><th>Player</th><th>Points</th></tr>
-      <tr><td>1</td><td>31Exalted</td><td>172</td></tr>
-      <tr><td>2</td><td>NeoSnipes</td><td>160</td></tr>
-      <tr><td>3</td><td>hermiracks</td><td>155</td></tr>
-      <tr><td>4</td><td>palesaonctrl</td><td>149</td></tr>
-      <tr><td>5</td><td>31MysteryGamer</td><td>143</td></tr>
-    </table>
+  <div id="d4d" class="tab active">
 
-  </div>
 
+<h2>Tournament details</h2>
   <p><strong>Date:</strong> 25 may 2026</p>
   <p><strong>Mode:</strong> Solo</p>
   <p><strong>Prize:</strong> P3500</p>
@@ -133,7 +112,7 @@ in a penalty deduction in the next tournament.
 <h3>Eligibility</h3>
 <p>
 Region: Africa<br>
-Contact: 31esports@gmail.com
+Contact: 31esportsbotswana@gmail.com
 </p>
 
 <h3>Rule Changes</h3>
@@ -146,7 +125,7 @@ Contact: 31esports@gmail.com
 No offensive, vulgar, or inappropriate names allowed.
 </p>
 
-<h3>Final 3 games/h3>
+<h3>Final 3 games</h3>
 <ul>
     <li>Teams must stream gameplay in Discord or youtube </li>
     <li>Max 1 coaches allowed</li>
@@ -171,34 +150,81 @@ No offensive, vulgar, or inappropriate names allowed.
 50 penalty points = 1 month ban. Continued violations may lead to permanent ban.
 </p>
 
+  </div>
 
-<h2>Register for Tournament</h2>
 
-<form id="regForm">
-    <input type="text" placeholder="Gamer Tag" required>
-    <input type="email" placeholder="Email" required>
-    <input type="text" placeholder="Game ID" required>
+<div id="d4l" class="tab ">
 
-    <button type="submit">Register</button>
-</form>
 
-</div>
-</body>
-</section>
 
+<table>
+
+                    <tr>
+                        <th>Position</th>
+                        <th>Player</th>
+                        <th>Points</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>31Exalted</td>
+                        <td>172</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>NeoSnipes</td>
+                        <td>160</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>hermiracks</td>
+                        <td>155</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>palesaonctrl</td>
+                        <td>149</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>31MysteryGamer</td>
+                        <td>143</td>
+                    </tr>
+
+                </table>
+
+          </div>
+
+         </section>
 <script>
-document.getElementById("regForm").addEventListener("submit", function(e){
-    e.preventDefault();
-    alert("Registration successful! You are entered into the tournament.");
-});
+
+function openTab(evt, tabId){
+
+    let tabs = document.querySelectorAll(".tab");
+
+    tabs.forEach(function(tab){
+        tab.style.display = "none";
+    });
+
+    document.getElementById(tabId).style.display = "block";
+}
+
+document.getElementById("d1l").style.display = "none";
+
 </script>
 
 
-  <a href="tournaments.html">Back</a>
+  <a href="tournaments.html "  class="cta-btn">Back</a>
 <footer>
-    <p>© 31 Esports 2026| All Rights Reserved|31esports@gmail.com</p>
+    <p>© 31 Esports 2026| All Rights Reserved|31esportsbotswana@gmail.com</p>
 </footer>
 
+</body>
+</html>
 
 
 

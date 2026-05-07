@@ -33,55 +33,24 @@
 
   <h1>31 Esports - Doritos solo cash cup</h1>
     
-    <div class="tournament">
-  <div class="header">
-    <h2>Solo Cash Cup #1</h2>
-    <div class="meta">27 August 2026 • P5000 • Solo</div>
-  </div>
+    
 
   <div class="tabs">
-    <button onclick="openTab(event,'s1d')">Details</button>
-    <button onclick="openTab(event,'s1l')">Leaderboard</button>
+    <button onclick="openTab(event,'d3d')">Details</button>
+    <button onclick="openTab(event,'d3l')">Leaderboard</button>
   </div>
 
-  <div id="s1d" class="tab active">
-    <p>Mode: Solo Competitive</p>
-    <p>Region: Global</p>
-  </div>
-
-  <div id="s1l" class="tab active">
-
-    
   
-  
-  <h3> Top 5</h3>
+   <div id="d3d" class="tab active">
 
 
-
-    <div class="player gold"> FaZe_Dominic — 165 pts</div>
-    <div class="player silver"> Xeero — 152 pts</div>
-    <div class="player bronze"> thato267 — 148 pts</div>
-    <div class="player">4. david — 140 pts</div>
-    <div class="player">5. ezkiel za — 135 pts</div>
-
-    <table>
-      <tr><th>#</th><th>Player</th><th>Points</th></tr>
-      <tr><td>1</td><td>faze dominic</td><td>165</td></tr>
-      <tr><td>2</td><td>Xeero</td><td>152</td></tr>
-      <tr><td>3</td><td>thato267</td><td>148</td></tr>
-      <tr><td>4</td><td>david</td><td>140</td></tr>
-      <tr><td>5</td><td>ezkielza</td><td>135</td></tr>
-    </table>
-
-  </div>
-
-   
 <h2>Tournament details</h2>
+
   <p><strong>Date:</strong> 24 may 2026</p>
   <p><strong>Mode:</strong> Solo</p>
   <p><strong>Prize:</strong> P3500</p>
   <p> <strong>time:</strong> 12pm</p>
-<p><strong>registration</strong>  23 may 2026</p>
+<p> <strong>registration</strong>  23 may 2026</p>
 
 
   <h2>Details</h2>
@@ -119,8 +88,7 @@ Participants may forfeit a match. However, forfeiting without a valid reason wil
 in a penalty deduction in the next tournament.
 </p>
 
-
-
+   
 
 
 <h3>Tiebreakers</h3>
@@ -140,7 +108,7 @@ in a penalty deduction in the next tournament.
 <h3>Eligibility</h3>
 <p>
 Region: Africa<br>
-Contact: 31esports@gmail.com
+Contact: 31esportsbotswana@gmail.com
 </p>
 
 <h3>Rule Changes</h3>
@@ -180,37 +148,77 @@ No offensive, vulgar, or inappropriate names allowed.
 
     
 
-
-<h2>Register for Tournament</h2>
-
-<form id="regForm">
-    <input type="text" placeholder="Gamer Tag" required>
-    <input type="email" placeholder="Email" required>
-    <input type="text" placeholder="Game ID" required>
-
-    <button type="submit">Register</button>
+   </div>
 
 
+<div id="d3l" class="tab ">
 
-</div>
+<table>
 
+                    <tr>
+                        <th>postion</th>
+                        <th>Player</th>
+                        <th>Points</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>FaZe_Dominic</td>
+                        <td>165</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Xeero</td>
+                        <td>152</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>thato267</td>
+                        <td>148</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>david</td>
+                        <td>140</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>ezkiel za</td>
+                        <td>135</td>
+                    </tr>
+
+                </table>
+
+ </div>
+
+      
 <script>
-document.getElementById("regForm").addEventListener("submit", function(e){
-    e.preventDefault();
-    alert("Registration successful! You are entered into the tournament.");
-});
+
+function openTab(evt, tabId){
+
+    let tabs = document.querySelectorAll(".tab");
+
+    tabs.forEach(function(tab){
+        tab.style.display = "none";
+    });
+
+    document.getElementById(tabId).style.display = "block";
+}
+
+document.getElementById("d1l").style.display = "none";
+
 </script>
-
-
-
-
 <a>
-  <a href="tournaments.html">Back</a>
+  <a href="tournaments.html" class="cta-btn">Back</a>
 
 </section>
 
 <footer>
-    <p>© 31 Esports 2026| All Rights Reserved|31esports@gmail.com</p>
+    <p>© 31 Esports 2026| All Rights Reserved|31esportsbotswana@gmail.com</p>
 </footer>
 
 </body>

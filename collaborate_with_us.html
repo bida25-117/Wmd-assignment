@@ -39,61 +39,72 @@
 
 
         <h2>Let's Work Together</h2>
+<form class="form-card" id="collabForm" action="https://formspree.io/f/xlgzbqao" method="POST">
 
-        
-<form class="form-card">
+    <label>Company Name</label>
+    <input type="text" name="company" placeholder="Company name" required>
 
-    <div class="input-group">
-        <label for="company">Company Name</label>
-        <input type="text" id="company" placeholder="e.g. 31 Esports" required>
-    </div>
+    <label>Contact Person</label>
+    <input type="text" name="contact" placeholder="Full name" required>
 
-    <div class="input-group">
-        <label for="contact">Contact Person</label>
-        <input type="text" id="contact" placeholder="Full name of representative" required>
-    </div>
+    <label>Email Address</label>
+    <input type="email" name="email" placeholder="example@email.com" required>
 
-    <div class="input-group">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="example@email.com" required>
-    </div>
+    <label>Phone Number</label>
+    <input type="tel" name="phone" placeholder="+267 71 234 567">
 
-    <div class="input-group">
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" placeholder="+267 71 234 567 (optional)">
-    </div>
+    <label>Partnership Type</label>
+    <select name="type" required>
+        <option value="">Select type</option>
+        <option value="tournament">Tournament Sponsorship</option>
+        <option value="brand">Brand Partnership</option>
+        <option value="content">Content Creation</option>
+        <option value="venue">Venue Sponsorship</option>
+        <option value="product">Product Sponsorship</option>
+    </select>
 
-    <div class="input-group">
-        <label for="type">Partnership Type</label>
-        <select id="type" required>
-            <option value="">Select partnership type</option>
-            <option>Tournament Sponsorship</option>
-            <option>Brand Partnership</option>
-            <option>Content Creation</option>
-            <option>Venue Sponsorship</option>
-            <option>Product sponsorship</option>
-        </select>
-    </div>
+    <label>Message</label>
+    <textarea name="message" placeholder="Tell us your idea..." rows="5" required></textarea>
 
-    <div class="input-group">
-        <label for="message">Message</label>
-        <textarea id="message" rows="5" placeholder="Tell us about your idea, sponsorship or collaboration..." required></textarea>
-    </div>
+    <button type="submit">Submit</button>
 
-    <button type="submit" class="cta-btn">Submit Application</button>
+</form>
+ 
+   
+    
+<script>
+const form = document.getElementById("collabForm");
 
+form.addEventListener("submit", (e) => {
 
-        </form>
+    const company = document.getElementById("company").value.trim();
+    const contact = document.getElementById("contact").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const type = document.getElementById("type").value;
+    const message = document.getElementById("message").value.trim();
 
-    </div>
+    if (!company || !contact || !email || !type || !message) {
+        alert("Fill in all required fields.");
+        e.preventDefault();
+        return;
+    }
 
-</section>
+    const emailCheck = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailCheck.test(email)) {
+        alert("Enter a valid email.");
+        e.preventDefault();
+        return;
+    }
+
+});
+</script>
 
 </main>
 </section>
 
 <footer>
-    <p>© 31 Esports 2026|all rights Reserved|31esports@gmail.com</p>
+    <p>© 31 Esports 2026|all rights Reserved|31esportsbotswana@gmail.com</p>
 </footer>
 
 </body>

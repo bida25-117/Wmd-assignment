@@ -27,96 +27,68 @@
     <a href="about_us.html">About us</a>
   </nav>
 </header>
-<section class="content-section">
 
-<body style="background:black; color:white; font-family:Arial;">
+<section class="content-section">
+  <body>
+
 
   <h1>31 Esports - DORITOS DUOS CASH Cup</h1>
 
-<div class="tournament">
-  <div class="header">
-    <h2>Duo Cash Cup #2</h2>
-    <div class="meta">24 may 2026 • P7500 • Duo</div>
-  </div>
+
 
   <div class="tabs">
     <button onclick="openTab(event,'d2d')">Details</button>
     <button onclick="openTab(event,'d2l')">Leaderboard</button>
   </div>
 
-  <div id="d2d" class="tab active">
-    <p>Mode: Duo Elite</p>
-    <p>High skill matchmaking</p>
-  </div>
+  
+<div id="d2d" class="tab active">
 
-  <div id="d2l" class="tab ">
-
-
-   <h3> Top 5</h3>
-    <div class="player gold"> Team falcon — 165 pts</div>
-    <div class="player silver"> Team 31 — 152 pts</div>
-    <div class="player bronze"> team 267 — 148 pts</div>
-    <div class="player">Team bw visuals — 140 pts</div>
-    <div class="player"> Team Bac fraggers — 135 pts</div>
-
-    <table>
-      <tr><th>#</th><th>Player</th><th>Points</th></tr>
-      <tr><td>1</td><td>Team falcon</td><td>165</td></tr>
-      <tr><td>2</td><td>Team 31<td>152</td></tr>
-      <tr><td>3</td><td>Team 267</td><td>148</td></tr>
-      <tr><td>4</td><td>Team bw visuals</td><td>140</td></tr>
-      <tr><td>5</td><td>Team bac fraggers</td><td>135</td></tr>
-    </table>
-
-  </div>
+  <h2>Tournament details</h2>
 
   <p><strong>Date:</strong> 24 may 2026</p>
   <p><strong>Mode:</strong> Duos</p>
   <p><strong>Prize:</strong> P7000</p>
-  <p> <strong>time:</strong> 12pm</p>
-<p><strong>registration</strong>  23 may 2026</p>
+  <p> <strong>time:</strong> 12pm</p> 
+  <p><strong>registration</strong>23 may 2026</p>
 
   <h2>Details</h2>
-  <p> Players team up in 6  duos matches and comete to win p3500.</p>
+  <p> Players team up in 6  duos matches and compete to win p3500.</p>
   
+  <h2> Requirements</h2>
 
-
-  <h2>Requirements</h2>
   <ul>
-    <li>Fortnite epic  account</li>
+    <li> Fortnite epic  account</li>
     <li> Fast  and Stable internet</li>
     <li> Have to be registered</li>
     <li>Live in Africa</li>
   </ul>
 
-<h2>rules</h2>
+<h2>Rules</h2>
 <ul>
     
-        <Li> No hacking</Li>
+        <li> No hacking</li>
 </ul>
 
-        <h2>player eligibility</h2>
+     <h2>player eligibility</h2>
   <ul>
-    <li>
-        players has to  live in south africa and registered. 
-    </li>
+    
+       <li>players has to  live in south africa and registered.</li> 
     
   </ul>
+
   <h2>Game Platform</h2>
+  
   <ul>
     <li>playstation,xbox,pc,nintendo and mobile</li>
   </ul>
 
-<h2>Tournament Rules</h2>
 
 <h3>Forfeiting</h3>
 <p>
 Participants may forfeit a match. However, forfeiting without a valid reason will result 
 in a penalty deduction in the next tournament.
 </p>
-
-
-
 
 <h3>Tiebreakers</h3>
 <ol>
@@ -135,7 +107,7 @@ in a penalty deduction in the next tournament.
 <h3>Eligibility</h3>
 <p>
 Region: Africa<br>
-Contact: 31esports@gmail.com
+Contact: 31esportsbotswana@gmail.com
 </p>
 
 <h3>Rule Changes</h3>
@@ -152,7 +124,7 @@ No offensive, vulgar, or inappropriate names allowed.
 <ul>
     <li>Teams must stream gameplay in Discord or youtube </li>
     <li>Max 1 coaches allowed</li>
-    <li>Must stay in channel during matches</li>
+    <li> Must stay in channel during matches</li>
 </ul>
 
 <h3>Disqualification</h3>
@@ -173,37 +145,77 @@ No offensive, vulgar, or inappropriate names allowed.
 50 penalty points = 1 month ban. Continued violations may lead to permanent ban.
 </p>
 
-
-<h2>Register for Tournament</h2>
-
-<form id="regForm">
-    <input type="text" placeholder="Gamer Tag" required>
-    <input type="email" placeholder="Email" required>
-    <input type="text" placeholder="Game ID" required>
-
-    <button type="submit">Register</button>
-</form>
-
 </div>
 
+
+
+<div id="d2l" class="tab ">
+ <table>
+
+                <tr>
+                    <th>postion</th>
+                    <th>Team</th>
+                    <th>Points</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Team Falcon</td>
+                    <td>165</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Team 31</td>
+                    <td>152</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Team 267</td>
+                    <td>148</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Team BW Visuals</td>
+                    <td>140</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Team Bac Fraggers</td>
+                    <td>135</td>
+</tr>
+  </table>
+
+        </div>
+
 <script>
-document.getElementById("regForm").addEventListener("submit", function(e){
-    e.preventDefault();
-    alert("Registration successful! You are entered into the tournament.");
-});
+
+function openTab(evt, tabId){
+
+    let tabs = document.querySelectorAll(".tab");
+
+    tabs.forEach(function(tab){
+        tab.style.display = "none";
+    });
+
+    document.getElementById(tabId).style.display = "block";
+}
+
+document.getElementById("d2l").style.display = "none";
+
 </script>
 
 
-
-
 <a>
-  <a href="tournaments.html">Back</a>
+  <a href="tournaments.html" class="cta-btn">Back</a>
 
 </section>
 <footer>
-    <p>© 31 Esports 2026| All Rights Reserved|31esports@gmail.com</p>
+    <p>© 31 Esports 2026| All Rights Reserved|31esportsbotswana@gmail.com</p>
 </footer>
-
 </body>
 </html>
 

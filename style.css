@@ -194,3 +194,14 @@ h2 {
 #hero{
   text-align: center;
 }
+
+li {
+  color: white;
+  font-size: 18px;
+}
+
+@media (max-width: 480px) {
+  .cards { grid-template-columns: 1fr; }
+  nav a { display: block; margin: 5px 0; }
+  table { width: 100%; }
+}
