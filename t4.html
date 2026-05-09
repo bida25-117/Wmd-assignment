@@ -142,22 +142,21 @@ No offensive, vulgar, or inappropriate names allowed.
 
 <h2>Register for Tournament</h2>
 
-<form id="regForm">
-    <input type="text" placeholder="Gamer Tag" required>
-    <input type="email" placeholder="Email" required>
-    <input type="text" placeholder="Game ID" required>
+<form action="https://formspree.io/f/xlgzbqao" method="POST">
 
-    <button type="submit">Register</button>
+  <input type="text" name="gamertag" placeholder="Gamer Tag" required>
+
+  <input type="email" name="email" placeholder="Email Address" required>
+
+  <input type="text" name="gameid" placeholder="Game ID" required>
+
+  <button type="submit">Register</button>
+
 </form>
 
 </div>
 
-<script>
-document.getElementById("regForm").addEventListener("submit", function(e){
-    e.preventDefault();
-    alert("Registration successful! You are entered into the tournament.");
-});
-</script>
+
 
 </main>
 

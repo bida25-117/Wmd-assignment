@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="style.css">
-    <title>Qualifier 4 | 31 ESPORTS</title>
+    <title> SERIES Qualifier SEMI FINALS| 31 ESPORTS</title>
   
 </head>
 
@@ -17,7 +17,7 @@
 
 
 <header>
-  <h1>SERIES QUALIFIER WEEK 4</h1>
+  <h1>SERIES QUALIFIER SEMI FINALS</h1>
 
   <nav>
     <a href="index.html">Home</a>
@@ -144,22 +144,20 @@ No offensive, vulgar, or inappropriate names allowed.
 
 <h2>Register for Tournament</h2>
 
-<form id="regForm">
-    <input type="text" placeholder="Gamer Tag" required>
-    <input type="email" placeholder="Email" required>
-    <input type="text" placeholder="Game ID" required>
+<form action="https://formspree.io/f/xlgzbqao" method="POST">
 
-    <button type="submit">Register</button>
+  <input type="text" name="gamertag" placeholder="Gamer Tag" required>
+
+  <input type="email" name="email" placeholder="Email Address" required>
+
+  <input type="text" name="gameid" placeholder="Game ID" required>
+
+  <button type="submit">Register</button>
+
 </form>
 
 
 
-<script>
-document.getElementById("regForm").addEventListener("submit", function(e){
-    e.preventDefault();
-    alert("Registration successful! You are entered into the tournament.");
-});
-</script>
 
 </section>
   </main>

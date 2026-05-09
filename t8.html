@@ -15,7 +15,7 @@
 
 <body>
 <header>
-  <h1> GRAND FINALS WEEK 2</h1>
+  <h1> GRAND FINALS DAY 2</h1>
 
   <nav>
     <a href="index.html">Home</a>
@@ -28,9 +28,10 @@
     <a href="about_us.html">About us</a>
   </nav>
 </header>
+<main>
 <section class="content-section">
 
-<main>
+
 
 
 
@@ -143,23 +144,22 @@ No offensive, vulgar, or inappropriate names allowed.
 
 
 <h2>Register for Tournament</h2>
+<form action="https://formspree.io/f/xlgzbqao" method="POST">
 
-<form id="regForm">
-    <input type="text" placeholder="Gamer Tag" required>
-    <input type="email" placeholder="Email" required>
-    <input type="text" placeholder="Game ID" required>
+  <input type="text" name="gamertag" placeholder="Gamer Tag" required>
 
-    <button type="submit">Register</button>
+  <input type="email" name="email" placeholder="Email Address" required>
+
+  <input type="text" name="gameid" placeholder="Game ID" required>
+
+  <button type="submit">Register</button>
+
 </form>
+
 
 </div>
 
-<script>
-document.getElementById("regForm").addEventListener("submit", function(e){
-    e.preventDefault();
-    alert("Registration successful! You are entered into the tournament.");
-});
-</script>
+
 </main>
 
 <a>
