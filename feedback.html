@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>Feedback - 31 ESPORTS</title>
+</head>
+
+<body>
+
+  <div class="header">
+    <img src="image/logo2.png" alt="31 esports" class="logo">
+    <span class="name">31 ESPORTS</span>
+  </div>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tournaments.html">Tournaments</a>
+      <a href="leaderboard.html">Leaderboard</a>
+      <a href="our_gamers.html">Gamers</a>
+      <a href="how_to_go_pro.html">How to Go Pro</a>
+      <a href="contact.html">Contact</a>
+      <a href="collaborate_with_us.html">Collaborate</a>
+      <a href="about_us.html">About us</a>
+      
+    </nav>
+  </header>
+
+  <main>
+    <section class="content-section">
+
+      <h1>Player Feedback</h1>
+
+      <section id="hero">
+        <h2>Share feedback for 31 ESPORTS</h2>
+        <p>Your ideas help improve tournaments, leaderboards, gamers, and the whole experience.</p>
+      </section>
+
+      <form id="contactForm" 
+            class="card" 
+            action="https://formspree.io/f/xlgzbqao" 
+            method="POST">
+
+        <label for="name">Your Name</label>
+        <input type="text" 
+               id="name" 
+               name="name" 
+               placeholder="Enter your name" 
+               required>
+
+        <label for="email">Email</label>
+        <input type="email" 
+               id="email" 
+               name="email" 
+               placeholder="Enter your email" 
+               required>
+
+        <label for="message">Your Feedback</label>
+        <textarea id="message" 
+                  name="message" 
+                  rows="5" 
+                  placeholder="Tell us what you think" 
+                  required></textarea>
+
+        <button type="submit" class="cta-btn">
+          Submit Feedback
+        </button>
+
+        <div id="feedback-response"></div>
+
+      </form>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 31 Esports 2026 | All Rights Reserved | 31esportsbotswana@gmail.com</p>
+    <a href="feedback.html">Feedback</a>
+  </footer>
+
+</body>
+</html>
